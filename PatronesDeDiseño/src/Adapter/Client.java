@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Observer;
+package Adapter;
 
 /**
  *
@@ -31,9 +31,9 @@ public class Client {
         }
 
         if (paymentSystem.pay(amount)) {
-            System.out.println("Querido cliente, su pago con " + type + " fue exitoso ");
+            System.out.println("Querido cliente, su pago con " + type + " fue exitoso.");
         } else {
-            System.out.println("Querido cliente, su pago con " + type + " no pudo ser completado");
+            System.out.println("Querido cliente, su pago con " + type + " no pudo ser completado.");
         }
     }
 }
