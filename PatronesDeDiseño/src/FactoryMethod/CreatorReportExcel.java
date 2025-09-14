@@ -8,6 +8,11 @@ package FactoryMethod;
  *
  * @author Keiver
  */
-public class CreatorReportExcel {
-    
+public class CreatorReportExcel extends Creator {
+
+    @Override
+    public IReport createReport() {
+        System.out.println("ExcelReportCreator: Creando reporte de notas en formato Excel.");
+        return new ReportExcel();
+    }
 }

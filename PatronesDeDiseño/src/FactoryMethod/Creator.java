@@ -6,8 +6,16 @@ package FactoryMethod;
 
 /**
  *
- * @author Keiver
+ * @author keive
  */
-public class RerportPDF {
-    
+abstract class Creator {
+
+    public abstract IReport createReport();
+
+    public void processReport() {
+        IReport reporte = createReport();
+        reporte.generateReport();
+        reporte.exportReport();
+    }
+
 }

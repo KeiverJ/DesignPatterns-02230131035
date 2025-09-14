@@ -8,6 +8,11 @@ package FactoryMethod;
  *
  * @author Keiver
  */
-public class CreatorReportHTML {
-    
+public class CreatorReportHTML extends Creator {
+
+    @Override
+    public IReport createReport() {
+        System.out.println("HTMLReportCreator: Creando reporte de notas en formato HTML.");
+        return new ReportHTML();
+    }
 }

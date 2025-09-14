@@ -8,6 +8,11 @@ package FactoryMethod;
  *
  * @author Keiver
  */
-public class CreatorReportPDF {
-    
+public class CreatorReportPDF extends Creator {
+
+    @Override
+    public IReport createReport() {
+        System.out.println("PdfReportCreator: Creando reporte de notas en formato PDF.");
+        return new ReportPDF();
+    }
 }

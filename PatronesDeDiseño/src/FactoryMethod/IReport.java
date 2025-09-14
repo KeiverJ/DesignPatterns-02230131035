@@ -8,6 +8,7 @@ package FactoryMethod;
  *
  * @author Keiver
  */
-public class IReport {
-    
+interface IReport {
+    void generateReport();
+    void exportReport();
 }
