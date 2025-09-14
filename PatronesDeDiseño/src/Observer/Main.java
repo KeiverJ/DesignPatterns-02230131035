@@ -17,9 +17,9 @@ public class Main {
         Client cliente2 = new Client("Sara Barboza", 12);
         Client cliente3 = new Client("Luis Diaz", 02);
 
-        ConcreteSuscribers suscriptor1 = new ConcreteSuscribers(cliente1.getName(), "juan@email.com", "Tecnologia");
-        ConcreteSuscribers suscriptor2 = new ConcreteSuscribers(cliente2.getName(), "maria@email.com", "Deportes");
-        ConcreteSuscribers suscriptor3 = new ConcreteSuscribers(cliente3.getName(), "carlos@email.com", "Ofertas");
+        ConcreteSuscribers suscriptor1 = new ConcreteSuscribers(cliente1.getName(), "andres@email.com", "Tecnologia");
+        ConcreteSuscribers suscriptor2 = new ConcreteSuscribers(cliente2.getName(), "perlitag@email.com", "Deportes");
+        ConcreteSuscribers suscriptor3 = new ConcreteSuscribers(cliente3.getName(), "lucho@email.com", "Ofertas");
 
         newsPublisher.subscribe(suscriptor1);
         newsPublisher.subscribe(suscriptor2);
