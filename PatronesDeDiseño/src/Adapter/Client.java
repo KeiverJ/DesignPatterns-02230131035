@@ -11,7 +11,7 @@ package Adapter;
 public class Client {
 
     public void SystemPayment(double amount, String type) {
-        System.out.println("Cliente: Iniciando proceso de pago por $" + amount + " con el método de pago: " + type);
+        System.out.println("Iniciando proceso de pago por $" + amount + " con el método de pago: " + type);
 
         IPayment paymentSystem;
 
