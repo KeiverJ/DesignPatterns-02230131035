@@ -195,8 +195,11 @@ classDiagram
         +update(context: String): void
     }
     class Client {
+        -idClient: int
         -name: String
-        +Client(name: String)
+        +Client(name: String, idClient: int)
+        +getIdClient(): int
+        +getName(): String
     }
     Publisher o-- Subscriber : manages
     Subscriber <|.. ConcreteSubscriber
