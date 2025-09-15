@@ -203,3 +203,4 @@ classDiagram
     Client --> Publisher : uses
     Publisher --> Subscriber : notifies
 ```
+### Readme realizado con apoyo de IA.
